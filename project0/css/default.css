@@ -52,6 +52,11 @@ a{
     clear: both;
 }
 
+#txt-search img{
+    position: absolute;
+    /* width: 15px;
+    height: 15px; */
+}
 
 /* Navigation */
 #navbar ul{
@@ -84,8 +89,13 @@ a{
     margin: 0 auto;
 }
 
-#txt-search input{
+#txt-search{
     position: relative;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+#txt-search input{
     display: block;
     width: 550px;
     margin: 30px auto 0;
@@ -97,9 +107,22 @@ a{
     border: 1px solid #ccc;
     border-radius: 55px;
 
-    background: url(../images/search.png) no-repeat 18px 12px;
+    /* background: url(../images/search.png) no-repeat 18px 12px; */
 }
 
+#search-img{
+    width: 15px; 
+    height: 15px; 
+    left: 18px;
+    top: 14px;
+}
+
+#mic-img{
+    width: 17px; 
+    height: 19px; 
+    right: 25px;
+    top: 13px;
+}
 
 
 #txt-search input:focus{
