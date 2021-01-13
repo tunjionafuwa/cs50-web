@@ -52,7 +52,7 @@ a{
     clear: both;
 }
 
-#txt-search img{
+#txt-search img, #txt-img img{
     position: absolute;
     /* width: 15px;
     height: 15px; */
@@ -89,17 +89,17 @@ a{
     margin: 0 auto;
 }
 
-#txt-search{
+#txt-search, #txt-img{
     position: relative;
     width: fit-content;
     margin: 30px auto;
 }
 
-#txt-search input{
+#txt-search input, #txt-img input{
     display: block;
     width: 550px;
     margin: 30px auto 0;
-    padding: 12px 55px;
+    height: 45px;
 
     font-size: 16px;
     line-height: 16px;
@@ -110,6 +110,21 @@ a{
     /* background: url(../images/search.png) no-repeat 18px 12px; */
 }
 
+#txt-search input{
+    padding: 0 55px;
+}
+
+#txt-img input{
+    padding-right: 130px;
+    padding-left: 55px;
+}
+
+#txt-search input:focus, 
+#txt-img input:focus{
+    outline: none;
+}
+
+
 #search-img{
     width: 15px; 
     height: 15px; 
@@ -117,17 +132,34 @@ a{
     top: 14px;
 }
 
-#mic-img{
+#b-search-img{
+    width: 15px; 
+    height: 15px; 
+    right: 25px;
+    top: 15px;
+}
+
+#txt-img #mic-img{
+    width: 17px; 
+    height: 19px; 
+    right: 58px;
+    top: 13px;
+}
+
+#txt-search #mic-img{
     width: 17px; 
     height: 19px; 
     right: 25px;
     top: 13px;
 }
 
-
-#txt-search input:focus{
-    outline: none;
+#cam-img{
+    width: 17px; 
+    height: 19px; 
+    right: 90px;
+    top: 13px;
 }
+
 
 input:hover,
 button:hover{
